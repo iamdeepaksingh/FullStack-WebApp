@@ -18,6 +18,10 @@ This is the frontend part of the GloboEvents application. It allows users to sea
 - Enter a city name in the input field and submit the form.
 - The application will fetch and display a list of events happening in that city.
 
+## Geolocation feature
+- Used leaflet-geosearch for enhanced map feature.
+- used OpenStreetMapProvider to get address based on event latitude and longitude.
+
 ## Running the Application
 
 No additional setup is required for the frontend. Just open the `index.html` file in your browser after starting the backend server. Make sure the backend is running to handle API requests.
