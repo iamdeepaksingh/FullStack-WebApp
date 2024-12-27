@@ -3,6 +3,7 @@ Full stack web application.
 
 
 **Project structure**
+```
 GloboEvents
 ├── backend
 │   ├── app.py
@@ -13,7 +14,7 @@ GloboEvents
     ├── index.html
     ├── app.js
     └── styles.css
-
+```
 
 **Testing**
 - pip install -r requirements.txt
