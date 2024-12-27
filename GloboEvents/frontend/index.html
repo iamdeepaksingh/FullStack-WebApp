@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GloboEvents</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch/dist/geosearch.css" />
 </head>
 <body>
     <div class="container">
-        <img src="logo1.jpeg" alt="GloboEvents Banner" class="banner">
-        <h1>GloboEvents</h1>
-        <input type="text" id="cityInput" placeholder="Enter city name">
-        <input type="number" id="sizeInput" placeholder="Number of events" min="1" max="100">
-        <button id="searchButton">Search Events</button>
-        <div id="eventsList"></div>
+        <header>
+            <img src="logo1.jpeg" alt="GloboEvents Banner" class="banner">
+            <h1>GloboEvents</h1>
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <h2>Filters</h2>
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <input type="number" id="sizeInput" placeholder="Number of events" min="1" max="100">
+                <input type="text" id="nameFilter" placeholder="Filter by name">
+                <input type="date" id="dateFilter" placeholder="Filter by date">
+                <button id="searchButton">Search Events</button>
+            </aside>
+            <main class="main-content">
+                <div id="eventsList"></div>
+            </main>
+        </div>
     </div>
+    <footer>
+        <p>Created by <a href="www.linkedin.com/in/singh-deepak-kumar" target="_blank">Deepak Singh</a></p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-geosearch/dist/geosearch.umd.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
